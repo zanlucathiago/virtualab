@@ -1,0 +1,23 @@
+.vl-logo {
+  font-family: 'Pangolin', cursive;
+  text-transform: none;
+}
+
+.v-logo {
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2.82rem;
+  /* color: linear-gradient(to right, red , yellow) */
+}
+
+.v-color-1 {
+  color: #9d46ff
+}
+
+.v-color-2 {
+  color: #e254ff
+}
+
+#wrapper {
+  background-color: #263238;
+}
