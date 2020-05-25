@@ -21,3 +21,85 @@
 #wrapper {
   background-color: #263238;
 }
+
+.my-icon {
+  position: absolute;
+  top: 12px;
+  cursor: pointer;
+  font-size: 2rem !important;
+}
+.my-icon:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+@media screen and (max-width: 736px) {
+  .my-icon {
+    font-size: 1.75rem !important;
+    top: 0.875rem;
+    left: 29.33px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .my-icon {
+    font-size: 1.75rem !important;
+    top: 0.875rem;
+    left: 20px;
+  }
+}
+
+#contact-form {
+  position: relative
+}
+
+.spinner {
+  width: 100%;
+  position: absolute;
+  top: 0
+}
+
+/* Toast */
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  /* z-index: 1; */
+  z-index: 4;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  font-weight: 500
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

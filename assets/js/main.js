@@ -292,7 +292,11 @@
 				var $this = $(this);
 
 				// Close.
-					$('<div class="close">Close</div>')
+				/**
+				 * Alterei o ícone! @Thiago
+				 */
+					// $('<div class="close">Close</div>')
+					$('<i class="my-icon material-icons">arrow_back</i>')
 						.appendTo($this)
 						.on('click', function() {
 							location.hash = '';
